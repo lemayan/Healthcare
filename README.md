@@ -1,141 +1,76 @@
-<div align="center">
-  <br />
-    <a href="https://youtu.be/lEflo_sc82g?feature=shared" target="_blank">
-      <img src="https://github.com/lemayan/healthcare/assets/151519281/a7dd73b6-93de-484d-84e0-e7f4e299167b" alt="Project Banner">
-    </a>
-  <br />
+# Healthcare Management System
 
-  <div>
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-    <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
-  </div>
+A modern healthcare patient management application built with Next.js that allows patients to register, book, and manage appointments with doctors.
 
-  <h3 align="center">A HealthCare Management System</h3>
-
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
-</div>
-
-## 📋 <a name="table">Table of Contents</a>
-
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets (Code to Copy)](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
-
-## 🚨 Tutorial
-
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/lEflo_sc82g?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
-
-## <a name="introduction">🤖 Introduction</a>
-
-A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js.
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+** members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
+## Tech Stack
 
 - Next.js
+- TypeScript
 - Appwrite
-- Typescript
 - TailwindCSS
-- ShadCN
+- ShadCN UI
 - Twilio
 
-## <a name="features">🔋 Features</a>
+## Features
 
-👉 **Register as a Patient**: Users can sign up and create a personal profile as a patient.
+- Patient registration and profile management
+- Book and manage appointments with doctors
+- Admin dashboard for appointment management
+- SMS notifications for appointment confirmations
+- File upload functionality
+- Performance monitoring with Sentry
+- Fully responsive design
 
-👉 **Book a New Appointment with Doctor**: Patients can schedule appointments with doctors at their convenience and can book multiple appointments.
+## Getting Started
 
-👉 **Manage Appointments on Admin Side**: Administrators can efficiently view and handle all scheduled appointments.
+### Prerequisites
 
-👉 **Confirm/Schedule Appointment from Admin Side**: Admins can confirm and set appointment times to ensure they are properly scheduled.
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Appwrite](https://appwrite.io/) account
 
-👉 **Cancel Appointment from Admin Side**: Administrators have the ability to cancel any appointment as needed.
+### Installation
 
-👉 **Send SMS on Appointment Confirmation**: Patients receive SMS notifications to confirm their appointment details.
-
-👉 **Complete Responsiveness**: The application works seamlessly on all device types and screen sizes.
-
-👉 **File Upload Using Appwrite Storage**: Users can upload and store files securely within the app using Appwrite storage services.
-
-👉 **Manage and Track Application Performance Using Sentry**: The application uses Sentry to monitor and track its performance and detect any errors.
-
-and many more, including code architecture and reusability
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
+1. Clone the repository:
 ```bash
-git clone https://github.com/lemayan/healthcare.git
-cd healthcare
+git clone https://github.com/lemayan/Healthcare.git
+cd Healthcare
 ```
 
-**Installation**
-
-Install the project dependencies using npm:
-
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-**Set Up Environment Variables**
-
-Create a new file named `.env.local` in the root of your project and add the following content:
-
+3. Create a `.env.local` file in the root directory and add your environment variables:
 ```env
-#APPWRITE
 NEXT_PUBLIC_ENDPOINT=https://cloud.appwrite.io/v1
-PROJECT_ID=
-API_KEY=
-DATABASE_ID=
-PATIENT_COLLECTION_ID=
-APPOINTMENT_COLLECTION_ID=
-NEXT_PUBLIC_BUCKET_ID=
-
+PROJECT_ID=your_project_id
+API_KEY=your_api_key
+DATABASE_ID=your_database_id
+PATIENT_COLLECTION_ID=your_patient_collection_id
+APPOINTMENT_COLLECTION_ID=your_appointment_collection_id
+NEXT_PUBLIC_BUCKET_ID=your_bucket_id
 NEXT_PUBLIC_ADMIN_PASSKEY=111111
 ```
 
-Replace the placeholder values with your actual Appwrite credentials. You can obtain these credentials by signing up on the [Appwrite website](https://appwrite.io/).
-
-**Running the Project**
-
+4. Run the development server:
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## <a name="snippets">🕸️ Snippets</a>
+## Environment Variables
 
-<details>
-<summary><code>tailwind.config.ts</code></summary>
+You'll need to set up an Appwrite project and create the required collections. Sign up at [appwrite.io](https://appwrite.io/) and configure your database with the following collections:
+- Patients collection
+- Appointments collection
+- Storage bucket for file uploads
 
-```typescript
+## License
+
+This project is open source and available under the MIT License.
 import type { Config } from "tailwindcss";
 
 const { fontFamily } = require("tailwindcss/defaultTheme");
