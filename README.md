@@ -71,7 +71,6 @@ You'll need to set up an Appwrite project and create the required collections. S
 ## License
 
 This project is open source and available under the MIT License.
-import type { Config } from "tailwindcss";
 
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
